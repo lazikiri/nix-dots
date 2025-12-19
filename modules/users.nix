@@ -14,6 +14,7 @@
       pkgs.alejandra
       pkgs.ncdu
       pkgs.nwg-look
+      pkgs.stow
     ];
   };
 
