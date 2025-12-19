@@ -15,6 +15,9 @@
       nwg-look
       pkgs.nur.repos.forkprince.helium-nightly
       stow
+      btop
+      unzip
+      unp
 
       # DOTFILE STUFF BELOW
       # Hyprland
