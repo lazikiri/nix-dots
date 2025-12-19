@@ -1,7 +1,6 @@
 {
   config,
   pkgs,
-  # nur,
   ...
 }: {
   home.username = "user";
@@ -10,14 +9,9 @@
 
   home.packages = with pkgs; [
     neovim
+    ripgrep
+
     tmux
-    alejandra
-    ncdu
-    brave
-    quickshell
-    rofi
-    kitty
-    lazygit
   ];
 
   programs.git = {

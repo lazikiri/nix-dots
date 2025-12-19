@@ -3,6 +3,8 @@
   pkgs,
   ...
 }: {
+services.getty.autologinUser = "user";
+
   services.printing.enable = false;
 
   services.xserver.enable = true;
