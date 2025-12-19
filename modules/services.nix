@@ -3,17 +3,7 @@
   pkgs,
   ...
 }: {
-  services.getty.autologinUser = "user";
-
-  services.printing.enable = false;
-
-  services.pulseaudio.enable = false;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
+  services.auto-cpufreq.enable = true;
 
   services.flatpak = {
     enable = true;
@@ -35,6 +25,19 @@
       "org.vinegarhq.Sober"
     ];
   };
+
+  services.getty.autologinUser = "user";
+
+
+  services.pulseaudio.enable = false;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
+
+  services.printing.enable = false;
 
   zramSwap = {
     enable = true;

@@ -20,7 +20,6 @@
       # Hyprland
       adw-gtk3
       adwaita-icon-theme
-      auto-cpufreq
       cliphist
       dunst
       gtklock
