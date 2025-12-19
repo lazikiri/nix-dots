@@ -8,6 +8,8 @@
     xwayland.enable = true;
   };
 
+  programs.gamemode.enable = true;
+
   programs.git = {
     enable = true;
     config = {
