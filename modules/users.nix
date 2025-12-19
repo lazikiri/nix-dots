@@ -7,6 +7,7 @@
     isNormalUser = true;
     description = "User";
     extraGroups = ["networkmanager" "wheel"];
+    shell = pkgs.fish;
     packages = with pkgs; [
       alejandra
       lazygit

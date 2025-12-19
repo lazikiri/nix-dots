@@ -5,6 +5,10 @@
 }: {
   programs.gamemode.enable = true;
 
+  programs.fish = {
+    enable = true;
+  };
+
   programs.git = {
     enable = true;
     config = {
