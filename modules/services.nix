@@ -18,6 +18,7 @@
       }
     ];
     packages = [
+      "com.dec05eba.gpu_screen_recorder"
       "com.discordapp.Discord"
       "com.github.tchx84.Flatseal"
       "com.usebottles.bottles"
