@@ -19,6 +19,7 @@
       # DOTFILE STUFF BELOW
       # Hyprland
       adw-gtk3
+      hyprshot
       adwaita-icon-theme
       cliphist
       dunst
