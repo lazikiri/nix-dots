@@ -10,24 +10,24 @@
     shell = pkgs.fish;
     packages = with pkgs; [
       alejandra
+      btop
       lazygit
       ncdu
       nwg-look
       pkgs.nur.repos.forkprince.helium-nightly
       stow
-      btop
-      unzip
       unp
+      unzip
 
       # DOTFILE STUFF BELOW
       # Hyprland
       adw-gtk3
-      hyprshot
       adwaita-icon-theme
       cliphist
       dunst
       gtklock
       hyprpolkitagent
+      hyprshot
       kitty
       matugen
       quickshell
