@@ -10,9 +10,10 @@
 
   programs.git = {
     enable = true;
-    # settings.user = {
-    #   name = "lazikiri";
-    #   email = "lazikiri@tuta.com";
-    # };
+    config = {
+      user.name = "lazikiri";
+      user.email = "lazikiri@tuta.com";
+      init.defaultBranch = "master";
+    };
   };
 }

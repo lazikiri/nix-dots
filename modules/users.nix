@@ -1,7 +1,6 @@
 {
   config,
   pkgs,
-  # nur,
   ...
 }: {
   users.users.user = {
