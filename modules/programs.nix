@@ -3,11 +3,6 @@
   pkgs,
   ...
 }: {
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
   programs.gamemode.enable = true;
 
   programs.git = {
@@ -17,5 +12,10 @@
       user.email = "lazikiri@tuta.com";
       init.defaultBranch = "master";
     };
+  };
+
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
   };
 }
