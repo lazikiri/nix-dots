@@ -12,12 +12,18 @@
     ./modules/packages.nix
   ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
+  boot = {
+    kernelPackages = pkgs.linuxPackages_xanmod_latest;
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
+  };
 
-  networking.hostName = "nixos";
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "nixos";
+    networkmanager.enable = true;
+  };
 
   time.timeZone = "America/Nassau";
   i18n.defaultLocale = "en_US.UTF-8";
