@@ -22,7 +22,6 @@
     enable = true;
     xwayland.enable = true;
   };
-}
 
   programs.steam = {
     enable = true;
@@ -30,3 +29,4 @@
       proton-ge-bin
     ];
   };
+}
