@@ -28,6 +28,10 @@
       }
     ];
     packages = [
+      "com.discordapp.Discord"
+      "com.github.tchx84.Flatseal"
+      "io.github.flattool.Warehouse"
+      "io.github.lawstorant.boxflat"
       "org.vinegarhq.Sober"
     ];
   };
