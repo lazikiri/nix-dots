@@ -21,5 +21,17 @@
   environment.systemPackages = with pkgs; [
     openrazer-daemon
     polychromatic
+    mcontrolcenter
   ];
+
+  boot = {
+    extraModulePackages = [config.boot.kernelPackages.msi-ec];
+    kernelParams = [
+      "ec_sys.write_support=1"
+    ];
+    kernelModules = [
+      "ec_sys"
+      "msi_ec"
+    ];
+  };
 }
