@@ -19,7 +19,7 @@
       unp
       unzip
 
-      # DOTFILE STUFF BELOW
+      # ----- DOTFILE STUFF BELOW -----
       # Hyprland
       adw-gtk3
       adwaita-icon-theme
