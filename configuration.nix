@@ -26,7 +26,12 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [];
+  fonts.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk-serif
+    noto-fonts-color-emoji
+    nerd-fonts.fira-code
+  ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
   system.stateVersion = "25.11";

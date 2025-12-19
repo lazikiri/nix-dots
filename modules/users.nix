@@ -30,7 +30,6 @@
       hyprpolkitagent
       kitty
       matugen
-      nerd-fonts.fira-code
       quickshell
       rofi
       swww
