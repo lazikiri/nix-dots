@@ -1,5 +1,6 @@
 {
   config,
+  pkgs,
   lib,
   pkgs,
   ...
@@ -16,4 +17,10 @@
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+
+  hardware.openrazer.enable = true;
+  environment.systemPackages = with pkgs; [
+    openrazer-daemon
+    polychromatic
+  ];
 }
