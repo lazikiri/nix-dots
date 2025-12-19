@@ -3,18 +3,11 @@
   pkgs,
   ...
 }: {
-  programs.steam = {
-    enable = true;
-    extraCompatPackages = with pkgs; [
-      proton-ge-bin
-    ];
-  };
-
-  programs.gamemode.enable = true;
-
   programs.fish = {
     enable = true;
   };
+
+  programs.gamemode.enable = true;
 
   programs.git = {
     enable = true;
@@ -30,3 +23,10 @@
     xwayland.enable = true;
   };
 }
+
+  programs.steam = {
+    enable = true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
+  };
