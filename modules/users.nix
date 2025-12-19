@@ -6,7 +6,7 @@
   users.users.user = {
     isNormalUser = true;
     description = "User";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "openrazer" "plugdev"];
     shell = pkgs.fish;
     packages = with pkgs; [
       alejandra
