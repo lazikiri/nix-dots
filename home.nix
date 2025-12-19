@@ -8,23 +8,9 @@
   home.stateVersion = "25.11";
 
   home.packages = with pkgs; [
-    neovim
-    ripgrep
-
-    tmux
-
-    quickshell
-    kitty
-    rofi
-    swww
-    wiremix
-    dunst
-    matugen
-    hyprpolkitagent
-    nerd-fonts.fira-code
-    adw-gtk3
-    adwaita-icon-theme
   ];
+
+  programs.fish.enable = true;
 
   programs.git = {
     enable = true;
