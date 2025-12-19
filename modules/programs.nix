@@ -29,4 +29,9 @@
       proton-ge-bin
     ];
   };
+
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
 }
