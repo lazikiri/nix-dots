@@ -6,8 +6,10 @@
   imports = [
     ./hardware-configuration.nix
     ./modules/users.nix
+    ./modules/drivers.nix
     ./modules/services.nix
     ./modules/programs.nix
+    ./modules/packages.nix
   ];
 
   boot.loader.systemd-boot.enable = true;

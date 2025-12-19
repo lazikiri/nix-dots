@@ -9,13 +9,13 @@
     description = "User";
     extraGroups = ["networkmanager" "wheel"];
     packages = [
+      pkgs.nur.repos.forkprince.helium-nightly
       pkgs.lazygit
       pkgs.alejandra
       pkgs.ncdu
-      pkgs.nur.repos.forkprince.helium-nightly
+      pkgs.nwg-look
     ];
   };
 
-
-security.sudo.wheelNeedsPassword = false;
+  security.sudo.wheelNeedsPassword = false;
 }

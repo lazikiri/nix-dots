@@ -12,6 +12,18 @@
     ripgrep
 
     tmux
+
+    quickshell
+    kitty
+    rofi
+    swww
+    wiremix
+    dunst
+    matugen
+    hyprpolkitagent
+    nerd-fonts.fira-code
+    adw-gtk3
+    adwaita-icon-theme
   ];
 
   programs.git = {

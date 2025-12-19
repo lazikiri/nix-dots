@@ -3,17 +3,9 @@
   pkgs,
   ...
 }: {
-services.getty.autologinUser = "user";
+  services.getty.autologinUser = "user";
 
   services.printing.enable = false;
-
-  services.xserver.enable = true;
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
 
   services.pulseaudio.enable = false;
   services.pipewire = {
