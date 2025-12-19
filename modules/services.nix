@@ -28,7 +28,6 @@
 
   services.getty.autologinUser = "user";
 
-
   services.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
