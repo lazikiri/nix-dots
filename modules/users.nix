@@ -18,6 +18,7 @@
       stow
       unp
       unzip
+      brave
 
       # ----- DOTFILE STUFF BELOW -----
       # Hyprland
