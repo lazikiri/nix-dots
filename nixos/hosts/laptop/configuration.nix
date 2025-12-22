@@ -5,6 +5,7 @@
 }: {
   imports = [
     ./hardware-configuration.nix
+    ./hardware.nix
     ./../../modules/zram/zram.nix
     ./../../modules/services/auto-cpufreq.nix
     ./../../modules/services/flatpak.nix
