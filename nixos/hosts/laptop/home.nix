@@ -11,6 +11,7 @@
 
   home.packages = with pkgs; [
     alejandra
+    brave
     btop
     lazygit
     ncdu
@@ -18,7 +19,6 @@
     pkgs.nur.repos.forkprince.helium-nightly
     unp
     unzip
-    brave
 
     # ----- DOTFILE STUFF BELOW -----
     # Hyprland

@@ -13,10 +13,10 @@
     ./../../modules/services/pipewire.nix
     ./../../modules/services/printing.nix
     ./../../modules/desktop/hyprland.nix
+    ./../../modules/programs/fish.nix
     ./../../modules/programs/gamemode.nix
     ./../../modules/programs/git.nix
     ./../../modules/programs/steam.nix
-    ./../../modules/programs/fish.nix
     ./../../users/users.nix
   ];
 
