@@ -5,11 +5,18 @@
 }: {
   imports = [
     ./hardware-configuration.nix
-    ./modules/users.nix
-    ./modules/drivers.nix
-    ./modules/services.nix
-    ./modules/programs.nix
-    ./modules/packages.nix
+    ./../../modules/zram/zram.nix
+    ./../../modules/services/auto-cpufreq.nix
+    ./../../modules/services/flatpak.nix
+    ./../../modules/services/getty.nix
+    ./../../modules/services/pipewire.nix
+    ./../../modules/services/printing.nix
+    ./../../modules/desktop/hyprland.nix
+    ./../../modules/programs/fish.nix
+    ./../../modules/programs/gamemode.nix
+    ./../../modules/programs/git.nix
+    ./../../modules/programs/steam.nix
+    ./../../users/users.nix
   ];
 
   boot = {
