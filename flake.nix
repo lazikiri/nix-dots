@@ -28,13 +28,13 @@
         nur.modules.nixos.default
         nur.legacyPackages."x86_64-linux".repos.iopq.modules.xraya
         home-manager.nixosModules.home-manager
-        # {
-        #   home-manager = {
-        #     useGlobalPkgs = true;
-        #     useUserPackages = true;
-        #     users.user = import ./home.nix;
-        #   };
-        # }
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.user = import ./nixos/hosts/laptop/home.nix;
+          };
+        }
         nix-flatpak.nixosModules.nix-flatpak
       ];
     };
