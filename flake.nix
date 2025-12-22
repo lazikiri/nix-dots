@@ -1,5 +1,5 @@
 {
-  description = "Flake";
+  description = "NixOS Flake";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
@@ -7,23 +7,35 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
   };
 
   outputs = {
-    self,
     nixpkgs,
-    nix-flatpak,
     nur,
+    home-manager,
+    nix-flatpak,
     ...
   }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         ./configuration.nix
-        nix-flatpak.nixosModules.nix-flatpak
         nur.modules.nixos.default
         nur.legacyPackages."x86_64-linux".repos.iopq.modules.xraya
+        home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.user = import ./home.nix;
+          };
+        }
+        nix-flatpak.nixosModules.nix-flatpak
       ];
     };
   };
