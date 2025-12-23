@@ -5,49 +5,49 @@
     extraGroups = ["networkmanager" "wheel" "openrazer" "plugdev"];
     shell = pkgs.fish;
 
-  packages = with pkgs; [
-    alejandra
-    brave
-    btop
-    lazygit
-    ncdu
-    nwg-look
-    pkgs.nur.repos.forkprince.helium-nightly
-    unp
-    unzip
-    stow
+    packages = with pkgs; [
+      alejandra
+      brave
+      btop
+      lazygit
+      ncdu
+      nwg-look
+      pkgs.nur.repos.forkprince.helium-nightly
+      unp
+      unzip
+      stow
 
-    # ----- DOTFILE STUFF BELOW -----
-    # Hyprland
-    adw-gtk3
-    adwaita-icon-theme
-    cliphist
-    dunst
-    hyprpolkitagent
-    hyprshot
-    kitty
-    matugen
-    quickshell
-    rofi
-    swww
-    wiremix
-    wl-clipboard
-    yazi
+      # ----- DOTFILE STUFF BELOW -----
+      # Hyprland
+      adw-gtk3
+      adwaita-icon-theme
+      cliphist
+      dunst
+      hyprpolkitagent
+      hyprshot
+      kitty
+      matugen
+      quickshell
+      rofi
+      swww
+      wiremix
+      wl-clipboard
+      yazi
 
-    # Fish
-    eza
-    fastfetch
-    fzf
-    zoxide
+      # Fish
+      eza
+      fastfetch
+      fzf
+      zoxide
 
-    # Neovim
-    neovim
-    ripgrep
+      # Neovim
+      neovim
+      ripgrep
 
-    mpv
+      mpv
 
-    tmux
-  ];
+      tmux
+    ];
   };
 
   security = {
