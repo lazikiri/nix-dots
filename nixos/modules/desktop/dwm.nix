@@ -34,10 +34,10 @@
   };
 
   environment.systemPackages = with pkgs; [
-    # (st.overrideAttrs (oldAttrs: rec {
-    #   src = ./dwm/st;
-    #   patches = [];
-    # }))
+    (st.overrideAttrs (oldAttrs: rec {
+      src = ./dwm/st;
+      patches = [];
+    }))
     picom
     rofi
     xclip
