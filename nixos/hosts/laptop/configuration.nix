@@ -14,9 +14,8 @@
     ./../../modules/services/printing.nix
     ./../../modules/desktop/hyprland.nix
     ./../../modules/programs/fish.nix
-    ./../../modules/programs/gamemode.nix
+    ./../../modules/programs/gaming.nix
     ./../../modules/programs/git.nix
-    ./../../modules/programs/steam.nix
     ./../../users/users.nix
   ];
 
