@@ -7,7 +7,7 @@
     windowManager.dwm = {
       enable = true;
       package = pkgs.dwm.overrideAttrs {
-      src = ./dwm;
+        src = ./dwm;
       };
     };
   };
@@ -24,6 +24,8 @@
 
   environment.systemPackages = with pkgs; [
     dmenu
+    picom
+    rofi
     st
   ];
 }
