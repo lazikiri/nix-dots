@@ -20,4 +20,21 @@
       };
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    adw-gtk3
+    adwaita-icon-theme
+    cliphist
+    dunst
+    hyprpolkitagent
+    hyprshot
+    kitty
+    matugen
+    quickshell
+    rofi
+    swww
+    wiremix
+    wl-clipboard
+    yazi
+  ];
 }

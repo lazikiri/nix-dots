@@ -17,29 +17,6 @@
       unzip
       stow
 
-      # ----- DOTFILE STUFF BELOW -----
-      # Hyprland
-      adw-gtk3
-      adwaita-icon-theme
-      cliphist
-      dunst
-      hyprpolkitagent
-      hyprshot
-      kitty
-      matugen
-      quickshell
-      rofi
-      swww
-      wiremix
-      wl-clipboard
-      yazi
-
-      # Fish
-      eza
-      fastfetch
-      fzf
-      zoxide
-
       # Neovim
       neovim
       ripgrep
@@ -48,10 +25,5 @@
 
       tmux
     ];
-  };
-
-  security = {
-    sudo.wheelNeedsPassword = false;
-    polkit.enable = true;
   };
 }

@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   ...
 }: {
@@ -35,7 +34,11 @@
   time.timeZone = "America/Nassau";
   i18n.defaultLocale = "en_US.UTF-8";
 
-  security.rtkit.enable = true;
+  security = {
+    polkit.enable = true;
+    rtkit.enable = true;
+    sudo.wheelNeedsPassword = false;
+  };
 
   nixpkgs.config.allowUnfree = true;
 
