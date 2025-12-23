@@ -7,9 +7,17 @@
     windowManager.dwm = {
       enable = true;
       package = pkgs.dwm.overrideAttrs {
-        src = ./dwm;
+        src = ./dwm/dwm;
         patches = [
-          ./dwm/patches/nodmenu.patch
+          ./dwm/dwm/patches/nodmenu.patch
+          (pkgs.fetchpatch {
+            url = "https://dwm.suckless.org/patches/fullgaps/dwm-fullgaps-6.4.diff";
+            hash = "sha256-+OXRqnlVeCP2Ihco+J7s5BQPpwFyRRf8lnVsN7rm+Cc=";
+          })
+          (pkgs.fetchpatch {
+            url = "https://dwm.suckless.org/patches/systray/dwm-systray-20230922-9f88553.diff";
+            hash = "sha256-Kh1aP1xgZAREjTy7Xz48YBo3rhrJngspUYwBU2Gyw7k=";
+          })
         ];
       };
     };
@@ -26,10 +34,13 @@
   };
 
   environment.systemPackages = with pkgs; [
-    dmenu
+    (st.overrideAttrs (oldAttrs: rec {
+    src = ./dwm/st;
+    patches = [];
+    }))
     picom
     rofi
-    st
     xclip
+    slock
   ];
 }
