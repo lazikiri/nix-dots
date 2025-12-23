@@ -7,7 +7,7 @@
     ./../../modules/services/flatpak.nix
     ./../../modules/services/getty.nix
     ./../../modules/services/pipewire.nix
-    ./../../modules/services/printing.nix
+    # ./../../modules/services/printing.nix
     ./../../modules/desktop/hyprland.nix
     ./../../modules/desktop/dwm.nix
     ./../../modules/programs/fish.nix
