@@ -8,6 +8,9 @@
       enable = true;
       package = pkgs.dwm.overrideAttrs {
         src = ./dwm;
+        patches = [
+          ./dwm/patches/nodmenu.patch
+        ];
       };
     };
   };
@@ -27,5 +30,6 @@
     picom
     rofi
     st
+    xclip
   ];
 }
