@@ -38,6 +38,8 @@
     sudo.wheelNeedsPassword = false;
   };
 
+  documentation.man.generateCaches = false;
+
   nixpkgs.config.allowUnfree = true;
 
   fonts.packages = with pkgs; [
