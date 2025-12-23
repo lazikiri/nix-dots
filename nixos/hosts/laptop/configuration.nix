@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   imports = [
     ./hardware-configuration.nix
     ./hardware.nix
@@ -12,6 +9,7 @@
     ./../../modules/services/pipewire.nix
     ./../../modules/services/printing.nix
     ./../../modules/desktop/hyprland.nix
+    ./../../modules/desktop/dwm.nix
     ./../../modules/programs/fish.nix
     ./../../modules/programs/gaming.nix
     ./../../modules/programs/git.nix
