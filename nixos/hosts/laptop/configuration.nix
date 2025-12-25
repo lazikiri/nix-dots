@@ -47,6 +47,7 @@
     noto-fonts-cjk-serif
     noto-fonts-color-emoji
     nerd-fonts.fira-code
+    nerd-fonts.jetbrains-mono
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
