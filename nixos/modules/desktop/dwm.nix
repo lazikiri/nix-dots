@@ -42,5 +42,6 @@
     rofi
     xclip
     slock
+    feh
   ];
 }
