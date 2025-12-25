@@ -16,6 +16,9 @@
       unp
       unzip
       stow
+      (discord.override {
+      withVencord = true;
+      })
 
       # Neovim
       neovim
