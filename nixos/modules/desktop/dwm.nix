@@ -47,6 +47,7 @@
       patches = [];
     }))
     feh
+    dunst
     flameshot
     picom
     rofi
