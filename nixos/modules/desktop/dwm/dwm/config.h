@@ -24,9 +24,7 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-    "dunst", NULL,
-    "feh", "--bg-scale", "/home/user/Pictures/Wallpapers/wallpaper3.png", NULL,
-    "xsetroot", "-name", "test", NULL,
+    "/etc/nixos/nixos/modules/desktop/dwm/dwm/scripts/autostart.sh", NULL,
 	NULL /* terminate */
 };
 
@@ -73,6 +71,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_space,  spawn,          SHCMD("rofi -show drun") },
 	{ MODKEY,                       XK_Return, spawn,          SHCMD("st") },
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("slock") },
+    { 0,                            XK_Print,  spawn,          SHCMD("flameshot gui") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
