@@ -2,7 +2,6 @@
   imports = [
     ./hardware-configuration.nix
     ./hardware.nix
-    ./configuration.nix
     ./fonts.nix
     ./packages.nix
     ./../../modules/zram/zram.nix
