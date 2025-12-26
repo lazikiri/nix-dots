@@ -4,6 +4,10 @@
     xwayland.enable = true;
   };
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.fira-code
+  ];
+
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
@@ -22,8 +26,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    adw-gtk3
-    adwaita-icon-theme
     cliphist
     dunst
     hyprpolkitagent
