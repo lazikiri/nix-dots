@@ -2,13 +2,16 @@
   imports = [
     ./hardware-configuration.nix
     ./hardware.nix
+    ./configuration.nix
+    ./fonts.nix
+    ./packages.nix
     ./../../modules/zram/zram.nix
     ./../../modules/services/auto-cpufreq.nix
     ./../../modules/services/flatpak.nix
     ./../../modules/services/getty.nix
     ./../../modules/services/pipewire.nix
     # ./../../modules/services/printing.nix
-    ./../../modules/desktop/hyprland.nix
+    # ./../../modules/desktop/hyprland.nix
     ./../../modules/desktop/dwm.nix
     ./../../modules/programs/fish.nix
     ./../../modules/programs/gaming.nix
@@ -38,17 +41,7 @@
     sudo.wheelNeedsPassword = false;
   };
 
-  documentation.man.generateCaches = false;
-
   nixpkgs.config.allowUnfree = true;
-
-  fonts.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk-serif
-    noto-fonts-color-emoji
-    nerd-fonts.fira-code
-    nerd-fonts.jetbrains-mono
-  ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
   system.stateVersion = "25.11";
