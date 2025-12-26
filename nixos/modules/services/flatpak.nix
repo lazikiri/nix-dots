@@ -13,13 +13,12 @@
       }
     ];
     packages = [
-      "com.dec05eba.gpu_screen_recorder"
       "com.github.tchx84.Flatseal"
       "com.usebottles.bottles"
       "io.github.flattool.Warehouse"
+      "io.github.kukuruzka165.materialgram"
       "io.github.lawstorant.boxflat"
       "org.vinegarhq.Sober"
-      "io.github.kukuruzka165.materialgram"
     ];
   };
 }
