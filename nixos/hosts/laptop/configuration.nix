@@ -8,14 +8,15 @@
     ./../../modules/services/auto-cpufreq.nix
     ./../../modules/services/flatpak.nix
     ./../../modules/services/getty.nix
-    ./../../modules/services/pipewire.nix
     ./../../modules/services/ntp.nix
+    ./../../modules/services/pipewire.nix
     # ./../../modules/services/printing.nix
-    ./../../modules/desktop/hyprland.nix
     # ./../../modules/desktop/dwm.nix
+    ./../../modules/desktop/hyprland.nix
     ./../../modules/programs/fish.nix
     ./../../modules/programs/gaming.nix
     ./../../modules/programs/git.nix
+    # ./../../modules/programs/nix-ld.nix
     ./../../users/users.nix
   ];
 
