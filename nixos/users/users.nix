@@ -27,6 +27,8 @@
       mpv
 
       tmux
+
+      nautilus
     ];
   };
 }
