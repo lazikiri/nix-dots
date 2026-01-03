@@ -18,7 +18,7 @@
     nixpkgs,
     nur,
     nix-flatpak,
-    xlibre-overlay,
+    # xlibre-overlay,
     ...
   }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
