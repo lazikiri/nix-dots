@@ -37,7 +37,6 @@
     swww
     wiremix
     wl-clipboard
-    yazi
   ];
 
   programs.gtklock.enable = true;
