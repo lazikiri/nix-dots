@@ -3,5 +3,6 @@
     neovim
     ripgrep
     tmux
+    yazi
   ];
 }
