@@ -18,7 +18,9 @@
       stow
       (discord.override {
         withVencord = true;
+        withOpenASAR = true;
       })
+      easyeffects
 
       # Neovim
       neovim
