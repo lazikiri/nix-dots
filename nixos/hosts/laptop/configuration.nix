@@ -37,24 +37,6 @@
   gpu-recorder.enable = true;
   nix-ld.enable = true;
 
-
-    xdg.portal = {
-      enable = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-hyprland
-        xdg-desktop-portal-gtk
-      ];
-      config = {
-        common.default = ["gtk"];
-        hyprland = {
-          default = [
-            "hyprland"
-            "gtk"
-          ];
-        };
-      };
-    };
-
   boot = {
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     loader = {
