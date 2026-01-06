@@ -7,27 +7,53 @@
 
     ./../../modules/zram/zram.nix
 
-    ./../../modules/services/auto-cpufreq.nix
-    ./../../modules/services/flatpak.nix
-    ./../../modules/services/getty.nix
-    ./../../modules/services/ntp.nix
-    ./../../modules/services/pipewire.nix
-    # ./../../modules/services/printing.nix
-
-    # ./../../modules/desktop/dwm.nix
-    ./../../modules/desktop/hyprland.nix
-
-    ./../../modules/programs/fish.nix
-    ./../../modules/programs/gaming.nix
-    ./../../modules/programs/git.nix
-    # ./../../modules/programs/nix-ld.nix
+    ./../../modules/services/default.nix
+    ./../../modules/desktop/default.nix
+    ./../../modules/programs/default.nix
 
     ./../../modules/packages/browsers.nix
     ./../../modules/packages/cli.nix
     ./../../modules/packages/desktopapps.nix
     ./../../modules/packages/development.nix
+
     ./../../users/users.nix
   ];
+
+  ai.enable = true;
+  cpufreq.enable = true;
+  flatpak.enable = true;
+  getty.enable = false;
+  ntp.enable = true;
+  pipewire.enable = true;
+  printing.enable = false;
+
+  hyprland.enable = true;
+  dwm.enable = false;
+  plasma.enable = false;
+
+  fish.enable = true;
+  gaming.enable = true;
+  git.enable = true;
+  gpu-recorder.enable = true;
+  nix-ld.enable = true;
+
+
+    xdg.portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-hyprland
+        xdg-desktop-portal-gtk
+      ];
+      config = {
+        common.default = ["gtk"];
+        hyprland = {
+          default = [
+            "hyprland"
+            "gtk"
+          ];
+        };
+      };
+    };
 
   boot = {
     kernelPackages = pkgs.linuxPackages_xanmod_latest;

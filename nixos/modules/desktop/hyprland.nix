@@ -1,43 +1,52 @@
-{pkgs, ...}: {
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
+  options.hyprland.enable = lib.mkEnableOption "Enable Hyprland";
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.fira-code
-  ];
+  config = lib.mkIf config.hyprland.enable {
+    programs.hyprland = {
+      enable = true;
+      xwayland.enable = true;
+    };
 
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-hyprland
-      xdg-desktop-portal-gtk
+    fonts.packages = with pkgs; [
+      nerd-fonts.fira-code
     ];
-    config = {
-      common.default = ["gtk"];
-      hyprland = {
-        default = [
-          "hyprland"
-          "gtk"
-        ];
+
+    xdg.portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-hyprland
+        xdg-desktop-portal-gtk
+      ];
+      config = {
+        common.default = ["gtk"];
+        hyprland = {
+          default = [
+            "hyprland"
+            "gtk"
+          ];
+        };
       };
     };
+
+    environment.systemPackages = with pkgs; [
+      cliphist
+      dunst
+      hyprpolkitagent
+      hyprshot
+      kitty
+      matugen
+      quickshell
+      rofi
+      swww
+      wiremix
+      wl-clipboard
+    ];
+
+    programs.gtklock.enable = true;
   };
-
-  environment.systemPackages = with pkgs; [
-    cliphist
-    dunst
-    hyprpolkitagent
-    hyprshot
-    kitty
-    matugen
-    quickshell
-    rofi
-    swww
-    wiremix
-    wl-clipboard
-  ];
-
-  programs.gtklock.enable = true;
 }
