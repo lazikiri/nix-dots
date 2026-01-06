@@ -2,7 +2,7 @@
   users.users.user = {
     isNormalUser = true;
     description = "User";
-    extraGroups = ["networkmanager" "wheel" "openrazer" "plugdev"];
+    extraGroups = ["networkmanager" "wheel"];
     shell = pkgs.fish;
   };
 }
