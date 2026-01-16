@@ -35,7 +35,7 @@
   gaming.enable = true;
   git.enable = true;
   gpu-recorder.enable = false;
-  nix-ld.enable = true;
+  nix-ld.enable = false;
 
   boot = {
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
