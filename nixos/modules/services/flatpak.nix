@@ -25,7 +25,6 @@
         "io.github.flattool.Warehouse"
         "io.github.kukuruzka165.materialgram"
         "io.github.lawstorant.boxflat"
-        "org.vinegarhq.Sober"
       ];
     };
   };
