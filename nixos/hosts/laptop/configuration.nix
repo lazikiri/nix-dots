@@ -19,7 +19,7 @@
     ./../../users/users.nix
   ];
 
-  ai.enable = true;
+  ai.enable = false;
   cpufreq.enable = true;
   flatpak.enable = true;
   getty.enable = true;
@@ -34,7 +34,7 @@
   fish.enable = true;
   gaming.enable = true;
   git.enable = true;
-  gpu-recorder.enable = true;
+  gpu-recorder.enable = false;
   nix-ld.enable = true;
 
   boot = {
