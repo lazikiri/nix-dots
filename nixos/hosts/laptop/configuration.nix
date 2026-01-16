@@ -22,7 +22,7 @@
   ai.enable = true;
   cpufreq.enable = true;
   flatpak.enable = true;
-  getty.enable = false;
+  getty.enable = true;
   ntp.enable = true;
   pipewire.enable = true;
   printing.enable = false;
