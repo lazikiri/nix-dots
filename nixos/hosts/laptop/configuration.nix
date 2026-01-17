@@ -19,7 +19,7 @@
     ./../../users/users.nix
   ];
 
-  ai.enable = false;
+  ai.enable = true;
   cpufreq.enable = true;
   flatpak.enable = true;
   getty.enable = true;
