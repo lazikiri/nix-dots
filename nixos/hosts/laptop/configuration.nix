@@ -4,18 +4,11 @@
     ./hardware.nix
     ./fonts.nix
     ./packages.nix
-
     ./../../modules/zram/zram.nix
-
     ./../../modules/services/default.nix
     ./../../modules/desktop/default.nix
     ./../../modules/programs/default.nix
-
-    ./../../modules/packages/browsers.nix
-    ./../../modules/packages/cli.nix
-    ./../../modules/packages/desktopapps.nix
-    ./../../modules/packages/development.nix
-
+    ./../../modules/packages/default.nix
     ./../../users/users.nix
   ];
 
@@ -36,6 +29,10 @@
   git.enable = true;
   gpu-recorder.enable = false;
   nix-ld.enable = false;
+
+cliapps.enable = true;
+desktopapps.enable = true;
+developmentapps.enable = true;
 
   boot = {
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
