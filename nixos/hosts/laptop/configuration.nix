@@ -30,9 +30,9 @@
   gpu-recorder.enable = false;
   nix-ld.enable = false;
 
-cliapps.enable = true;
-desktopapps.enable = true;
-developmentapps.enable = true;
+  cliapps.enable = true;
+  desktopapps.enable = true;
+  developmentapps.enable = true;
 
   boot = {
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
