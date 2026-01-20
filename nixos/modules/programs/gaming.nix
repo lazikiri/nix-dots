@@ -20,5 +20,9 @@
         proton-ge-bin
       ];
     };
+
+    services.udev.extraRules = ''
+      SUBSYSTEM=="tty", KERNEL=="ttyACM*", ATTRS{idVendor}=="346e", ACTION=="add", MODE="0666", TAG+="uaccess"
+    '';
   };
 }
