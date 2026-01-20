@@ -20,8 +20,8 @@
   }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      specialArgs = { 
-        stable-pkgs = nixpkgs-25_05.legacyPackages.x86_64-linux; 
+      specialArgs = {
+        stable-pkgs = nixpkgs-25_05.legacyPackages.x86_64-linux;
       };
       modules = [
         ./nixos/hosts/laptop/configuration.nix
