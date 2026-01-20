@@ -1,5 +1,6 @@
 {
   pkgs,
+  stable-pkgs,
   lib,
   config,
   ...
@@ -11,6 +12,10 @@
 
     programs.steam = {
       enable = true;
+      protontricks = {
+        enable = true;
+        package = stable-pkgs.protontricks;
+      };
       extraCompatPackages = with pkgs; [
         proton-ge-bin
       ];
