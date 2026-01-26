@@ -28,7 +28,7 @@
   gaming.enable = true;
   git.enable = true;
   gpu-recorder.enable = false;
-  nix-ld.enable = false;
+  nix-ld.enable = true;
 
   cliapps.enable = true;
   desktopapps.enable = true;
