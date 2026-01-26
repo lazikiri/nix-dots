@@ -24,7 +24,8 @@
         "com.usebottles.bottles"
         "io.github.flattool.Warehouse"
         "io.github.lawstorant.boxflat"
-        "net.davidotek.pupgui2"
+        "org.vinegarhq.Sober"
+        "org.vinegarhq.Vinegar"
       ];
     };
   };
