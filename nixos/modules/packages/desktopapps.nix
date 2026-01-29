@@ -13,8 +13,6 @@
         withOpenASAR = true;
       })
       mpv
-      easyeffects
-      nautilus
       nwg-look
       brave
       pkgs.nur.repos.forkprince.helium-nightly

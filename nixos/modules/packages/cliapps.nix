@@ -9,7 +9,6 @@
   config = lib.mkIf config.cliapps.enable {
     environment.systemPackages = with pkgs; [
       alejandra
-      btop
       lazygit
       ncdu
       stow
