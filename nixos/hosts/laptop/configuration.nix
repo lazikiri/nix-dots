@@ -27,7 +27,7 @@
   fish.enable = true;
   gaming.enable = true;
   git.enable = true;
-  gpu-recorder.enable = false;
+  gpu-screen-recorder.enable = false;
   nix-ld.enable = false;
 
   cliapps.enable = true;
