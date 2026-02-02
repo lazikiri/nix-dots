@@ -12,8 +12,7 @@
       lazygit
       ncdu
       stow
-      unp
-      unrar-free
+      unrar
       unzip
     ];
   };
