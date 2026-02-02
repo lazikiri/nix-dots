@@ -13,6 +13,7 @@
       ncdu
       stow
       unp
+      unrar-free
       unzip
     ];
   };
