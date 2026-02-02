@@ -26,7 +26,6 @@
         "io.github.lawstorant.boxflat"
         "org.telegram.desktop"
         "org.vinegarhq.Sober"
-        "org.vinegarhq.Vinegar"
       ];
     };
   };
