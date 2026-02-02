@@ -12,9 +12,9 @@
         withVencord = true;
         withOpenASAR = true;
       })
+      brave
       mpv
       nwg-look
-      brave
       pkgs.nur.repos.forkprince.helium-nightly
     ];
   };
