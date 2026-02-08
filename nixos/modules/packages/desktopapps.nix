@@ -16,6 +16,7 @@
       mpv
       nwg-look
       pkgs.nur.repos.forkprince.helium-nightly
+      nautilus
     ];
   };
 }
